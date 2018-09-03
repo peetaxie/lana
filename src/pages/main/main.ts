@@ -33,7 +33,7 @@ export class MainPage {
   seconds: string|number;
   visibility: string = 'hidden';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-      var audio = new Audio("assets/music/music1.mp3");
+      //var audio = new Audio("assets/music/music1.mp3");
       // audio.play();
   	  this.getTogetherDate();
   		setInterval(() => {this.getTogetherDate();}, 1000);
