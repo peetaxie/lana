@@ -25,7 +25,7 @@ export class MainPage {
  @ViewChild(Slides)slides:Slides;
  @ViewChild('timer') timerRef : ElementRef;
  //images=['1.jpg','2.jpg','3.jpg','4.jpg'];
- images=['color.jpg'];
+  images=['color.jpg'];
  // TogetherDate;
   days : string|number;
   hours : string|number;
