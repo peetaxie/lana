@@ -1,0 +1,93 @@
+
+
+<ion-content class="no-scroll" style="background-color: black" >
+<!-- 	<video controls muted preload="auto" autoplay playsinline muted="muted" loop><source src="assets/video/background.mp4"></video>
+ -->
+	<!-- <h1 style="position: fixed;bottom: 80px; color: white;z-index: 99999;">{{TogetherDate}}</h1> -->
+
+<!-- 	<div  class="typing title-h" style="border:1px solid red;position: fixed;text-align: center;z-index: 99999">		
+			<h5 class="dateunit">第</h5>
+			<h1>{{days}}</h1>
+			<h5 class="dateunit">天</h5>
+			<h1>{{hours}}</h1>
+			<h5 class="dateunit">小时</h5>
+			<h1>{{minutes}}</h1>
+			<h5 class="dateunit">分钟</h5>
+			<h1>{{seconds}}</h1>
+			<h5 class="dateunit">秒</h5>
+		
+	</div> -->
+
+	<!-- <h1 class="neon" data-text="[Neon_Light]">21</h1> -->
+<!-- 
+	 <audio style="position: fixed;" controls>
+      <source src="assets/music/music1.mp3" type="audio/mpeg">
+    </audio> -->
+
+  	<!-- <div class="heart-shape" style="position: fixed;z-index: 9999"></div> -->
+
+    <div class="firstpage" id="whitepage"></div>
+	<span class="firstpageword" id="together">在一起</span>
+
+
+  	<button ion-button  class="start_button" id="mainbutton" (click)="startbutton()" large  clear>
+  		<ion-icon class="heartbeat" name="heart" id="hearticon"></ion-icon>
+  	</button>
+	<span class="open" id="openhide"  (click)="startbutton()">&nbsp;Open!</span>
+ 	
+
+	<div class="title-h title-i" style="" id="timer">	
+		<span class="timeunit">第</span>
+		<span class="neon">{{days}}</span>
+		<span class="timeunit">天</span>
+		<span class="neon">{{hours}}</span>
+		<span class="timeunit">小时</span>
+		<span class="neon">{{minutes}}</span>
+		<span class="timeunit">分钟</span>
+		<span class="neon">{{seconds}}</span>
+		<span class="timeunit">秒</span>
+	</div>
+
+		<h1 class="color">LOVE</h1>
+
+		<div class="initial_pulse" id="musicdiv" (click)="musicbutton()">
+			<ion-icon class="initial_music" id="musicicon"  name="md-musical-note"></ion-icon>
+		</div>
+
+
+
+
+	<h1 class="fadein_initial" id="fadein"> <span class="fadeinwords" id="fadeinword">&nbsp;asadsadada<!-- ❤️两周年快乐❤️ -->&nbsp;</span></h1>
+
+
+
+<!-- autoplay="3500" loop="true" speed="1000" direction="vertical"  -->
+				<!-- 	pager="true" -->
+		<ion-slides class="slide" id="slide">
+		<ion-slide *ngFor="let img of images">
+			
+				<img src="assets/imgs/{{img}}" class="slide-image">	
+		</ion-slide>
+
+
+	
+<!-- 		<ion-slide>	
+			<div style="border: 1px solid red">	
+				<img src="../../assets/imgs/1.jpg" class="slide-image">
+			</div>
+		</ion-slide>
+		<ion-slide>	
+			<img src="../../assets/imgs/2.jpg" class="slide-image">
+		</ion-slide>
+		<ion-slide>		
+			<img src="../../assets/imgs/3.jpg" class="slide-image">
+		</ion-slide>
+		<ion-slide>		
+			<img src="../../assets/imgs/4.jpg" class="slide-image">
+		</ion-slide> -->
+<!-- 
+		padding style="background: url(../../assets/imgs/3.jpg) no-repeat center center fixed;
+			background-size: cover" -->
+	</ion-slides>
+
+</ion-content>
